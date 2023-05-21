@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Mask Detector</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      video {
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #result {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Face Mask Detector</h1>
+      <video id="video" width="640" height="480" autoplay></video>
+      <button id="start-button">Start Face Mask Detection</button>
+      <p id="result"></p>
+    </div>
+    <script src="faceMaskDetector.js"></script>
+  </body>
+</html>
